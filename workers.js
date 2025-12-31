@@ -18,18 +18,18 @@ body {
   color: #fff;
   text-align: center;
 }
-body::before {
-  content: "";
+.bg-overlay {
   position: fixed;
   inset: 0;
   background:
     linear-gradient(
-      rgba(15,15,20,0.85),
-      rgba(15,15,20,0.85)
+      rgba(15,15,20,0.88),
+      rgba(15,15,20,0.88)
     ),
-    url("https://i.pinimg.com/originals/d0/08/9c/d0089c27cf5c67c60ad66c9fe1d87394.jpg") center bottom / contain no-repeat;
-  z-index: -2;
+    url("https://i.pinimg.com/originals/d0/08/9c/d0089c27cf5c67c60ad66c9fe1d87394.jpg") center center / cover no-repeat;
+  z-index: -3;
 }
+
 
 .bg-couple {
   position: fixed;
@@ -163,6 +163,8 @@ footer {
 </head>
 
 <body>
+<div class="bg-overlay"></div>
+
 <img
   src="https://i.pinimg.com/originals/d0/08/9c/d0089c27cf5c67c60ad66c9fe1d87394.jpg"
   alt="Bride and Groom Illustration"
