@@ -174,6 +174,43 @@ h1 {
   50%  { opacity: 1;   transform: scale(1.08); }
   100% { opacity: 0.6; transform: scale(1); }
 }
+.countdown-box {
+  margin-top: 35px;
+  padding: 18px 14px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(212,175,55,0.35);
+}
+
+.countdown-title {
+  font-size: 13px;
+  color: rgba(255,255,255,0.75);
+  margin-bottom: 12px;
+  font-style: italic;
+}
+
+.countdown {
+  display: flex;
+  justify-content: space-between;
+}
+
+.countdown div {
+  flex: 1;
+}
+
+.countdown span {
+  display: block;
+  font-size: 22px;
+  font-weight: 500;
+  color: #d4af37;
+  font-family: 'Playfair Display', serif;
+}
+
+.countdown small {
+  font-size: 11px;
+  opacity: 0.75;
+}
 
 footer {
   margin-top: 40px;
@@ -252,6 +289,15 @@ footer {
   <div class="venue">
     സൗപർണിക ഓഡിറ്റോറിയം<br/>
     ബോവികാനം, കാസർഗോഡ്
+  </div>
+</div>
+<div class="countdown-box">
+  <div class="countdown-title">Counting down to our forever</div>
+  <div class="countdown">
+    <div><span id="days">0</span><small>Days</small></div>
+    <div><span id="hours">0</span><small>Hours</small></div>
+    <div><span id="minutes">0</span><small>Minutes</small></div>
+    <div><span id="seconds">0</span><small>Seconds</small></div>
   </div>
 </div>
 
