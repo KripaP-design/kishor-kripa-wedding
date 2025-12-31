@@ -29,6 +29,28 @@ body {
   animation: fadeInUp 1.6s ease forwards;
   opacity: 0;
 }
+.sparkle {
+  position: fixed;
+  width: 4px;
+  height: 4px;
+  background: radial-gradient(circle, #ffd700 0%, rgba(255,215,0,0) 70%);
+  border-radius: 50%;
+  animation: float 6s linear infinite;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(100vh) scale(0.6);
+    opacity: 0;
+  }
+  20% { opacity: 0.6; }
+  100% {
+    transform: translateY(-10vh) scale(1);
+    opacity: 0;
+  }
+}
 
 @keyframes fadeInUp {
   from {
@@ -117,6 +139,22 @@ footer {
 <div class="lang-switch">
   <button onclick="switchLang()">English / മലയാളം</button>
 </div>
+<div style="text-align:right; margin-bottom:10px;">
+  <button onclick="toggleMusic()" style="
+    background:transparent;
+    border:1px solid #d4af37;
+    color:#d4af37;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:12px;
+    cursor:pointer;">
+    🎶 Music
+  </button>
+</div>
+
+<audio id="bgMusic" loop>
+  <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_0f3d4a45b5.mp3?filename=soft-piano-ambient-110624.mp3" type="audio/mpeg">
+</audio>
 
 <!-- ENGLISH -->
 <div id="en">
@@ -181,6 +219,28 @@ function switchLang() {
   en.style.display = en.style.display === "none" ? "block" : "none";
   ml.style.display = ml.style.display === "none" ? "block" : "none";
 }
+function createSparkle() {
+  const sparkle = document.createElement("div");
+  sparkle.className = "sparkle";
+  sparkle.style.left = Math.random() * 100 + "vw";
+  sparkle.style.animationDuration = 4 + Math.random() * 4 + "s";
+  document.body.appendChild(sparkle);
+
+  setTimeout(() => sparkle.remove(), 6000);
+}
+
+setInterval(createSparkle, 350);
+let musicPlaying = false;
+function toggleMusic() {
+  const music = document.getElementById("bgMusic");
+  if (!musicPlaying) {
+    music.play();
+  } else {
+    music.pause();
+  }
+  musicPlaying = !musicPlaying;
+}
+
 </script>
 
 </body>
