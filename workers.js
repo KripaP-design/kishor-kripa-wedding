@@ -27,7 +27,7 @@ body::before {
       rgba(15,15,20,0.85),
       rgba(15,15,20,0.85)
     ),
-    url("https://i.imgur.com/4ZQZ6ZB.png") center bottom / contain no-repeat;
+    url("https://i.pinimg.com/originals/d0/08/9c/d0089c27cf5c67c60ad66c9fe1d87394.jpg") center bottom / contain no-repeat;
   z-index: -2;
 }
 
@@ -164,7 +164,7 @@ footer {
 
 <body>
 <img
-  src="https://i.imgur.com/4ZQZ6ZB.png"
+  src="https://i.pinimg.com/originals/d0/08/9c/d0089c27cf5c67c60ad66c9fe1d87394.jpg"
   alt="Bride and Groom Illustration"
   class="bg-couple"
 />
