@@ -139,22 +139,6 @@ footer {
 <div class="lang-switch">
   <button onclick="switchLang()">English / മലയാളം</button>
 </div>
-<div style="text-align:right; margin-bottom:10px;">
-  <button onclick="toggleMusic()" style="
-    background:transparent;
-    border:1px solid #d4af37;
-    color:#d4af37;
-    padding:6px 12px;
-    border-radius:20px;
-    font-size:12px;
-    cursor:pointer;">
-    🎶 Music
-  </button>
-</div>
-
-<audio id="bgMusic" loop>
-  <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_0f3d4a45b5.mp3?filename=soft-piano-ambient-110624.mp3" type="audio/mpeg">
-</audio>
 
 <!-- ENGLISH -->
 <div id="en">
@@ -230,16 +214,7 @@ function createSparkle() {
 }
 
 setInterval(createSparkle, 350);
-let musicPlaying = false;
-function toggleMusic() {
-  const music = document.getElementById("bgMusic");
-  if (!musicPlaying) {
-    music.play();
-  } else {
-    music.pause();
-  }
-  musicPlaying = !musicPlaying;
-}
+
 
 </script>
 
