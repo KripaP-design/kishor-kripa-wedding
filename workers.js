@@ -117,6 +117,14 @@ h1 {
   color: #d4af37;
   font-size: 18px;
 }
+.blessing {
+  font-size: 13px;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.6;
+  margin-top: 10px;
+  margin-bottom: 6px;
+  font-style: italic;
+}
 
 .invite {
   color: #d4af37;
@@ -153,6 +161,19 @@ h1 {
   font-weight: 500;
   font-size: 14px;
 }
+.heart {
+  font-size: 22px;
+  color: #d4af37;
+  margin-top: 18px;
+  margin-bottom: 12px;
+  animation: heartGlow 2.5s ease-in-out infinite;
+}
+
+@keyframes heartGlow {
+  0%   { opacity: 0.6; transform: scale(1); }
+  50%  { opacity: 1;   transform: scale(1.08); }
+  100% { opacity: 0.6; transform: scale(1); }
+}
 
 footer {
   margin-top: 40px;
@@ -180,6 +201,11 @@ footer {
 <!-- ENGLISH -->
 <div id="en">
   <div class="invite">WEDDING INVITATION</div>
+  <div class="heart">♥</div>
+<div class="blessing">
+  With hearts full of gratitude and the blessings of our families
+</div>
+
 
   <h1>Kishor</h1>
   <div class="and">&</div>
