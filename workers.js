@@ -18,6 +18,35 @@ body {
   color: #fff;
   text-align: center;
 }
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    linear-gradient(
+      rgba(15,15,20,0.85),
+      rgba(15,15,20,0.85)
+    ),
+    url("https://i.imgur.com/4ZQZ6ZB.png") center bottom / contain no-repeat;
+  z-index: -2;
+}
+
+.bg-couple {
+  position: fixed;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 320px;
+  opacity: 0.25;
+  animation: coupleFloat 6s ease-in-out infinite;
+  z-index: -1;
+}
+
+@keyframes coupleFloat {
+  0% { transform: translate(-50%, 0); }
+  50% { transform: translate(-50%, -10px); }
+  100% { transform: translate(-50%, 0); }
+}
 
 .container {
   max-width: 420px;
@@ -134,6 +163,12 @@ footer {
 </head>
 
 <body>
+<img
+  src="https://i.imgur.com/4ZQZ6ZB.png"
+  alt="Bride and Groom Illustration"
+  class="bg-couple"
+/>
+
 <div class="container fade-in">
 
 <div class="lang-switch">
