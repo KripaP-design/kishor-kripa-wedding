@@ -257,7 +257,6 @@ body {
   color: #d4af37;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.65);
   margin-bottom: 6px;
 }
 
@@ -268,7 +267,7 @@ body {
 }
 
 .venue-place {
-  font-size: 13px;
+  font-size: 14px;
   opacity: 0.75;
   margin-top: 2px;
 }
@@ -329,43 +328,54 @@ body {
   50%  { opacity: 1;   transform: scale(1.08); }
   100% { opacity: 0.6; transform: scale(1); }
 }
+/* Remove outer box styling */
 .countdown-box {
-  margin-top: 35px;
-  padding: 18px 14px;
-  border-radius: 18px;
-  background: rgba(255,255,255,0.06);
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(212,175,55,0.35);
+  margin-top: 34px;
+  padding: 0;
+  background: none;
+  border: none;
+  text-align: center;
 }
 
 .countdown-title {
   font-size: 13px;
-  color: rgba(255,255,255,0.75);
-  margin-bottom: 12px;
+  margin-bottom: 14px;
+  color: rgba(255,255,255,0.8);
   font-style: italic;
 }
 
+/* Grid of time boxes */
 .countdown {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 }
 
-.countdown div {
-  flex: 1;
+/* Individual time box */
+.time-box {
+  background: #f6f1e7; /* light cream */
+  border-radius: 14px;
+  padding: 14px 6px;
 }
 
-.countdown span {
+/* Numbers */
+.time-box span {
   display: block;
   font-size: 22px;
-  font-weight: 500;
-  color: #d4af37;
+  font-weight: 700;
+  color: #3b2f1c;
   font-family: 'Playfair Display', serif;
 }
 
-.countdown small {
+/* Labels */
+.time-box small {
+  display: block;
+  margin-top: 4px;
   font-size: 11px;
-  opacity: 0.75;
+  letter-spacing: 0.5px;
+  color: #6a5b3b;
 }
+
 
 footer {
   margin-top: 40px;
@@ -437,8 +447,8 @@ footer {
   <div class="prewedding-title">Pre-Wedding Event</div>
 
   <div class="prewedding-detail">
-    📅 10 January 2026<br>
-    ⏰ 6:30 PM – 9:00 PM
+  10 January 2026<br>
+   6:30 PM – 9:00 PM
   </div>
 
   <div class="prewedding-location">
@@ -475,14 +485,28 @@ footer {
   </div>
 </div>
 <div class="countdown-box">
-  <div class="countdown-title">Counting down to our forever</div>
+  <div class="countdown-title">Only a little while to go</div>
+
   <div class="countdown">
-    <div><span id="days">0</span><small>Days</small></div>
-    <div><span id="hours">0</span><small>Hours</small></div>
-    <div><span id="minutes">0</span><small>Minutes</small></div>
-    <div><span id="seconds">0</span><small>Seconds</small></div>
+    <div class="time-box">
+      <span id="days">0</span>
+      <small>Days</small>
+    </div>
+    <div class="time-box">
+      <span id="hours">0</span>
+      <small>Hours</small>
+    </div>
+    <div class="time-box">
+      <span id="minutes">0</span>
+      <small>Minutes</small>
+    </div>
+    <div class="time-box">
+      <span id="seconds">0</span>
+      <small>Seconds</small>
+    </div>
   </div>
 </div>
+
 
 <footer>With love & gratitude 💛</footer>
 
