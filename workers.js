@@ -396,9 +396,9 @@ footer {
 
 <div class="container fade-in">
 
-<div class="lang-switch">
-  <button onclick="switchLang()">English / മലയാളം</button>
-</div>
+// <div class="lang-switch">
+//   <button onclick="switchLang()">English / മലയാളം</button>
+// </div>
 
 <!-- ENGLISH -->
 <div id="en">
@@ -453,7 +453,7 @@ footer {
 
   <div class="prewedding-location">
      Groom’s Home
-    <span class="location-icon">📌</span>
+    <span class="location-icon"><a href="https://www.google.com/maps?q=12.5314767,75.1392283&z=17&hl=en" target="_blank">📌</a></span>
   </div>
 </div>
 
