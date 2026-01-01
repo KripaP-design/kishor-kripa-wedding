@@ -107,16 +107,67 @@ body {
   font-size: 12px;
 }
 
-h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 34px;
-  margin: 8px 0;
+// h1 {
+//   font-family: 'Playfair Display', serif;
+//   font-size: 34px;
+//   margin: 8px 0;
+// }
+/* Name container */
+.names {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  overflow: hidden;
 }
 
-.and {
-  color: #d4af37;
-  font-size: 18px;
+/* Groom animation */
+.groom {
+  opacity: 0;
+  transform: translateX(-60px);
+  animation: groomFloat 1.4s ease-out forwards;
 }
+
+/* Bride animation */
+.bride {
+  opacity: 0;
+  transform: translateX(60px);
+  animation: brideFloat 1.4s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+/* Ampersand */
+.and {
+  opacity: 0;
+  animation: fadeIn 0.8s ease forwards;
+  animation-delay: 0.9s;
+}
+
+/* Keyframes */
+@keyframes groomFloat {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes brideFloat {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+// .and {
+//   color: #d4af37;
+//   font-size: 18px;
+// }
 .blessing {
   font-size: 13px;
   color: rgba(255,255,255,0.75);
@@ -244,9 +295,12 @@ footer {
 </div>
 
 
-  <h1>Kishor</h1>
-  <div class="and">&</div>
-  <h1>Kripa</h1>
+ <h1 class="names">
+  <span class="groom">Kishor</span>
+  <span class="and">&</span>
+  <span class="bride">Kripa</span>
+</h1>
+
 
   <div class="divider"></div>
 
