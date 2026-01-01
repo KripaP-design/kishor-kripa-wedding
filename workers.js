@@ -252,7 +252,9 @@ body {
 }
 
 .venue-title {
-  font-size: 13px;
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  color: #d4af37;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: rgba(255,255,255,0.65);
@@ -274,10 +276,8 @@ body {
 .prewedding-box {
   margin-top: 30px;
   padding: 18px 14px;
-  border-radius: 18px;
   background: rgba(255,255,255,0.06);
   backdrop-filter: blur(8px);
-  border: 1px dashed rgba(212,175,55,0.4);
   text-align: center;
 }
 
@@ -307,7 +307,7 @@ body {
 
 .btn {
   display: inline-block;
-  margin-top: 18px;
+  margin-top: 10px;
   padding: 12px 26px;
   border-radius: 30px;
   background: linear-gradient(135deg, #d4af37, #f5e28a);
@@ -433,8 +433,6 @@ footer {
   <a class="btn" href="https://maps.app.goo.gl/4SfaKnjbH7BnubxLA" target="_blank">
     📍 Open Location
   </a>
-  
-  <div class="divider"></div>
 <div class="prewedding-box">
   <div class="prewedding-title">Pre-Wedding Event</div>
 
@@ -445,12 +443,12 @@ footer {
 
   <div class="prewedding-location">
      Groom’s Home
-    <span class="location-icon">📌Open</span>
+    <span class="location-icon">📌</span>
   </div>
 </div>
 
   <br/>
-
+<div class="divider"></div>
   <a class="btn" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Kishor+%26+Kripa+Wedding&dates=20260111T062600Z/20260111T072000Z&location=Souparnika+Auditorium+Bovikanam+Kasargod&details=Wedding+Ceremony+of+Kishor+and+Kripa" target="_blank">
     📆 Add to Calendar
   </a>
