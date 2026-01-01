@@ -272,38 +272,6 @@ body {
   margin-top: 2px;
 }
 
-// .prewedding-box {
-//   margin-top: 30px;
-//   padding: 18px 14px;
-//   background: rgba(255,255,255,0.06);
-//   backdrop-filter: blur(8px);
-//   text-align: center;
-// }
-
-// .prewedding-title {
-//   font-family: 'Playfair Display', serif;
-//   font-size: 16px;
-//   color: #d4af37;
-//   margin-bottom: 10px;
-// }
-
-// .prewedding-detail {
-//   font-size: 13px;
-//   line-height: 1.6;
-//   opacity: 0.85;
-//   margin-bottom: 8px;
-// }
-
-// .prewedding-location {
-//   font-size: 13px;
-//   opacity: 0.9;
-// }
-
-.location-icon {
-  margin-left: 6px;
-  cursor: pointer;
-}
-
 .btn {
   display: inline-block;
   margin-top: 10px;
@@ -443,19 +411,6 @@ footer {
   <a class="btn" href="https://maps.app.goo.gl/4SfaKnjbH7BnubxLA" target="_blank">
     📍 Open Location
   </a>
-// <div class="prewedding-box">
-//   <div class="prewedding-title">Pre-Wedding Event</div>
-
-//   <div class="prewedding-detail">
-//   10 January 2026<br>
-//    6:30 PM – 9:00 PM
-//   </div>
-
-//   <div class="prewedding-location">
-//      Groom’s Home
-//     <span class="location-icon"><a href="https://www.google.com/maps?q=12.5314767,75.1392283&z=17&hl=en" target="_blank">📌</a></span>
-//   </div>
-// </div>
 
   <br/>
 <div class="divider"></div>
