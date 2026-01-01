@@ -191,8 +191,38 @@ body {
   margin: 25px auto;
 }
 
-.date {
+// .date {
+//   font-size: 18px;
+// }
+.muhurtham-box {
+  margin: 28px 0;
+  padding: 20px 16px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  text-align: center;
+}
+
+.muhurtham-title {
+  font-family: 'Playfair Display', serif;
   font-size: 18px;
+  letter-spacing: 1px;
+  color: #d4af37;
+  margin-bottom: 10px;
+}
+
+.muhurtham-date {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.muhurtham-time {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.75);
+  font-style: italic;
 }
 
 .time, .venue {
@@ -304,8 +334,18 @@ footer {
 
   <div class="divider"></div>
 
-  <div class="date">11 January 2026</div>
-  <div class="time">11:56 AM – 12:50 PM (IST)</div>
+  <div class="muhurtham-box">
+  <div class="muhurtham-title">Muhurtham</div>
+
+  <div class="muhurtham-date">
+    11 January 2026
+  </div>
+
+  <div class="muhurtham-time">
+    11:56 AM – 12:50 PM
+  </div>
+</div>
+
 
   <div class="divider"></div>
 
