@@ -183,6 +183,13 @@ body {
   margin-top: 20px;
   font-size: 13px;
 }
+.invite-line {
+  margin-top: 14px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.78);
+  font-style: italic;
+}
 
 .divider {
   width: 60px;
@@ -224,11 +231,78 @@ body {
   color: rgba(255, 255, 255, 0.75);
   font-style: italic;
 }
+.diya {
+  font-size: 26px;
+  margin-bottom: 6px;
+  animation: diyaGlow 2.5s ease-in-out infinite;
+}
 
-.time, .venue {
-  font-size: 14px;
+@keyframes diyaGlow {
+  0%, 100% {
+    text-shadow: 0 0 6px rgba(212,175,55,0.6);
+  }
+  50% {
+    text-shadow: 0 0 14px rgba(212,175,55,1);
+  }
+}
+
+.venue-box {
+  margin: 26px 0;
+  text-align: center;
+}
+
+.venue-title {
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.65);
+  margin-bottom: 6px;
+}
+
+.venue-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.venue-place {
+  font-size: 13px;
+  opacity: 0.75;
+  margin-top: 2px;
+}
+
+.prewedding-box {
+  margin-top: 30px;
+  padding: 18px 14px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(8px);
+  border: 1px dashed rgba(212,175,55,0.4);
+  text-align: center;
+}
+
+.prewedding-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  color: #d4af37;
+  margin-bottom: 10px;
+}
+
+.prewedding-detail {
+  font-size: 13px;
+  line-height: 1.6;
+  opacity: 0.85;
+  margin-bottom: 8px;
+}
+
+.prewedding-location {
+  font-size: 13px;
   opacity: 0.9;
-  margin-top: 6px;
+}
+
+.location-icon {
+  margin-left: 6px;
+  cursor: pointer;
 }
 
 .btn {
@@ -331,10 +405,12 @@ footer {
   <span class="bride">Kripa</span>
 </h1>
 
+<div class="invite-line">
+  We joyfully invite you to witness the beginning of our forever.
+</div>
+ <div class="muhurtham-box">
+  <div class="diya">🪔</div>
 
-  <div class="divider"></div>
-
-  <div class="muhurtham-box">
   <div class="muhurtham-title">Muhurtham</div>
 
   <div class="muhurtham-date">
@@ -348,15 +424,30 @@ footer {
 
 
   <div class="divider"></div>
-
-  <div class="venue">
-    Souparnika Auditorium<br/>
-    Bovikanam, Kasargod
-  </div>
+<div class="venue-box">
+  <div class="venue-title">Wedding at</div>
+  <div class="venue-name">Souparnika Auditorium, Bovikanam</div>
+  <div class="venue-place">Kasaragod</div>
+</div>
 
   <a class="btn" href="https://maps.app.goo.gl/4SfaKnjbH7BnubxLA" target="_blank">
     📍 Open Location
   </a>
+  
+  <div class="divider"></div>
+<div class="prewedding-box">
+  <div class="prewedding-title">Pre-Wedding Event</div>
+
+  <div class="prewedding-detail">
+    📅 10 January 2026<br>
+    ⏰ 6:30 PM – 9:00 PM
+  </div>
+
+  <div class="prewedding-location">
+     Groom’s Home
+    <span class="location-icon">📌Open</span>
+  </div>
+</div>
 
   <br/>
 
